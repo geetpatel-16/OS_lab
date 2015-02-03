@@ -1,0 +1,37 @@
+Home_assignment 1
+
+
+Que- 1
+	Output:
+		 using fork() where parent process was executing first.
+
+Parent sees i = 0 
+Parent sees i = 1 
+Child sees i = 0 
+Child sees i = 1 
+Parent sees i = 2 
+Child sees i = 2 
+		
+		using vfork() where child process is schedule first.
+
+Child sees i = 0 
+Parent sees i = 0 
+Child sees i = 1 
+Parent sees i = 1 
+Child sees i = 2 
+Parent sees i = 2 
+
+Que-2 
+	Output 
+
+	Parent says a: 1 
+	id: 2 a: 2 b: 1 
+	id: 1 a: 2 b: 1
+Here threads are not joining because of wile loop.
+
+Que-3
+	a) For m user-level threads and n kernel-level threads, 
+	m>>n , m>n and m(approx)=n mappings are a possibility. 
+	Since if m<n or m<<n which means there are n available kernel threads assigned to m user-level      threads which are less. Now if user level threads are less, then why would we need more kernel level threads. 
+
+	b)The best choice would be m>n. 
